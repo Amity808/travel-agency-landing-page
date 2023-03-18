@@ -4,7 +4,7 @@ import facebook from '../../images/face.png'
 import insta from '../../images/insta.png'
 import twitter from '../../images/twitter.png'
 import GooglePlay from '../../images/GooglePlay.png'
-import Playstore from '../../images/Playstore.png'
+import Playstore from '../../images/PlayStore.png'
 
 
 const Footer = () => {
