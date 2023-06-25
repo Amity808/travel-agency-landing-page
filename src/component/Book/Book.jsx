@@ -30,22 +30,22 @@ const Book = () => {
     ]
   return (
     <div className='flex mt-32'>
-      <div className='flex flex-row mt-32 justify-between'>
+      <div className='flex flex-row mt-32 justify-between max-sm:flex-col'>
       <div className='flex justify-start flex-col items-start '>
         <p className=' text-base font-semibold'>Easy and Fast</p>
-        <h1 className=' text-5xl font-bold mt-4 text-left mb-8 text-sky-900/80'>Book your <br />next trip <br />in 3 easy steps</h1>
+        <h1 className=' text-5xl font-bold mt-4 text-left mb-8 text-sky-900/80 max-sm:text-3xl'>Book your <br />next trip <br />in 3 easy steps</h1>
         <div className='flex flex-row '>
-            <div >
+            <div className=' max-sm:flex max-sm:flex-col'>
                 {cardData.map((item, index) => (
                     <BookCard imgCard={item.imgCard} textCard={item.textCard} paraCard={item.paraCard} />
                     ))}
             </div>
         </div>
      </div>
-            <div className='bg-gradient-to-r from-indigo-300 w-40 h-40 rounded-lg relative left-2/4 bottom-8 z-0'>
+            <div className='bg-gradient-to-r from-indigo-300 w-40 h-40 rounded-lg relative left-2/4 bottom-8 z-0 max-sm:hidden'>
 
             </div>
-            <div className=' shadow-zinc-900 w-96 h-80 flex flex-col justify-start text-left rounded-lg ml-8 '>
+            <div className=' shadow-zinc-900 w-96 h-80 flex flex-col justify-start text-left rounded-lg ml-8 mb-20'>
                 <img src={Greece} alt="greece" className='z-20' />
                 <p className=' text-lg font-medium mt-4 mb-4'>Trip To Greece</p>
                 <div className='flex flex-row'>
@@ -67,7 +67,7 @@ const Book = () => {
                 </div>
             </div>
       </div>
-            <div className=' shadow-2xl w-64 h-32 rounded-lg relative top-80 right-16 mt-4'>
+            <div className=' shadow-2xl w-64 h-32 rounded-lg relative top-80 right-16 mt-4 max-sm:hidden'>
                 <div className='flex flex-row justify-start items-start p-4'>
                     <img src={Mask} alt="" />
                     <div className='ml-4 text-left'>

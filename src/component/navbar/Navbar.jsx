@@ -21,28 +21,34 @@ const Navbar = () => {
         <p className='ml-9'><a href="#Bookings">Bookings</a></p>
       </div>
       </div>
-      <div className='lg:flex justify-end items-center md:hidden sm:hidden'>
+      <div className='lg:flex justify-end items-center md:hidden max-md:hidden'>
         <p className='ml-9'><a href="#Login">Login</a></p>
         <button className='ml-9'>Sign up</button>
-        <button className='ml-9'>EN</button>
+        <select name="en" id="en" className='ml-9'>
+              <option value="en">En</option>
+              <option value="fen">Fre</option>
+            </select>
       </div>
-      <div className='lg:hidden ml-4 relative md:flex  sm: flex'>
+      <div className='lg:hidden ml-4 relative '>
         {toggleMenu 
         ? <RiCloseLine color='0000' size={27} onClick={() => setToggleMenu(false)} className='relative left-44' /> : <RiMenu3Line color='0000' size={27} onClick={() => setToggleMenu(true)} className=''/>}
         {toggleMenu && (
-          <div className='lg:hidden  sm:flex p-7 justify-end items-end flex-col'>
-            <div className='flex flex-col'>
+          <div className='lg:hidden flex p-7 justify-center items-start flex-col'>
+            {/* <div className=''> */}
               <p className='ml-9 mt-2'><a href="#Desitnations">Desitnations</a></p>
               <p className='ml-9 mt-2'><a href="#Hotels">Hotels</a></p>
               <p className='ml-9 mt-2'><a href="#Flights">Flights</a></p>
               <p className='ml-9 mt-2'><a href="#Bookings">Bookings</a></p>
               
-            </div>
-            <div className='flex flex-col justify-center items-center'>
-            <p className=''><a href="#Login">Login</a></p>
-            <button className='p-5'>Sign up</button>
-            <button>EN</button>
-            </div>
+            {/* </div> */}
+            {/* <div className='flex flex-col'> */}
+            <p className='ml-9 mt-2'><a href="#Login">Login</a></p>
+            <button className='ml-9 mt-2'>Sign up</button>
+            <select name="en" id="en" className='ml-9 mt-2'>
+              <option value="en">En</option>
+              <option value="fen">Fre</option>
+            </select>
+            {/* </div> */}
           </div>
         )}
       </div>

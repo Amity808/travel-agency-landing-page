@@ -7,12 +7,12 @@ import ait from '../../images/ait.png'
 
 const Logo = () => {
   return (
-    <div className='flex flex-row justify-between h-40 items-center mt-6'>
+    <div className='flex flex-row justify-between h-40 items-center mt-6 object-contain aspect-auto '>
       <img src={Airplane} alt="" className=' w-24 h-26 hover:shadow-2xl' />
       <img src={Jest} alt="" className='w-24 h-26 hover:shadow-2xl' />
       <img src={Expedia} alt="" className='w-28 mt-8 h-30 hover:shadow-2xl' />
-      <img src={qantus} alt="" className=' w-16 h-20 hover:shadow-2xl' />
-      <img src={ait} alt="" className='w-24 h-20 hover:shadow-2xl' />
+      <img src={qantus} alt="" className=' w-16 h-20 hover:shadow-2xl max-sm:w-12 max-sm:12' />
+      <img src={ait} alt="" className='w-24 h-20 hover:shadow-2xl max-sm:w-12 max-sm:12' />
     </div>
   )
 }

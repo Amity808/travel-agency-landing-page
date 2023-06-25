@@ -10,28 +10,30 @@ import Playstore from '../../images/PlayStore.png'
 const Footer = () => {
   return (
     <div className=''>
-      <div className=' flex flex-row mt-10'>
-      <div className='flex justify-center flex-col'>
-        <h1 className=' text-5xl font-medium'>Jadoo.</h1>
-        <p className=' text-sm font-normal mt-6'>Book your trip in minute, get full Control for much longer.</p>
-      </div>
-      <div className='flex flex-row justify-center items-center'>
-        <FooterCard title="Company" text="About"  text1="Careers" text2="Mobile"  />
-        <FooterCard title="Contact" text="Help/FAQ"  text1="Press" text2="Affilates"  />
-        <FooterCard title="More" text="Airlinefees"  text1="Airline" text2="Low fare tips"  />
-      </div>
-      <div className='flex flex-col justify-center items-start ml-20'>
-        <div className=' flex flex-row'>
-            <img src={facebook} alt="" />
-            <img src={insta} alt="" />
-            <img src={twitter} alt="" />
+      <div className='flex flex-row justify-between max-sm:flex-col '>
+        <div className=' flex flex-row mt-10'>
+        <div className='flex justify-center flex-col'>
+          <h1 className=' text-5xl font-medium max-sm:text-3xl'>Jadoo.</h1>
+          <p className=' text-sm font-normal mt-6'>Book your trip in minute, get full Control for much longer.</p>
         </div>
-        <p>Discover our app</p>
-        <div className='flex flex-row'>
-            <img src={GooglePlay} alt="" />
-            <img src={Playstore} alt="" />
+        <div className='flex flex-row justify-center items-center max'>
+          <FooterCard title="Company" text="About"  text1="Careers" text2="Mobile"  />
+          <FooterCard title="Contact" text="Help/FAQ"  text1="Press" text2="Affilates"  />
+          <FooterCard title="More" text="Airlinefees"  text1="Airline" text2="Low fare tips"  />
         </div>
-      </div>
+        </div>
+        <div className='flex flex-col justify-center items-center max-sm:justify-center'>
+          <div className=' flex flex-row '>
+              <img src={facebook} alt="" />
+              <img src={insta} alt="" />
+              <img src={twitter} alt="" />
+          </div>
+          <p>Discover our app</p>
+          <div className='flex flex-row justify-between mb-6'>
+              <img src={GooglePlay} alt="" />
+              <img src={Playstore} alt="" />
+          </div>
+        </div>
       </div>
       <div>
         <p>Amity808 @ 2023 </p>

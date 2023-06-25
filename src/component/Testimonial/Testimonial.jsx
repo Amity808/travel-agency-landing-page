@@ -3,10 +3,10 @@ import Profile from '../../images/profile_img.png'
 
 const Testimonial = () => {
   return (
-    <div className='flex flex-row justify-between'>
-      <div className=' text-left'>
+    <div className='flex flex-row justify-between max-sm:flex-col'>
+      <div className=' text-left max-sm:mb-6'>
         <p className=' text-lg font-semibold text-blue-900/40'>Testimonial</p>
-        <h1 className=' text-6xl font-bold text-blue-900/50 mt-6'>What people say <br /> about Us.</h1>
+        <h1 className=' text-6xl font-bold text-blue-900/50 mt-6 max-sm:text-4xl'>What people say <br /> about Us.</h1>
         <div className=' w-4 h-4 text-blue-900/40'>
 
         </div>

@@ -28,9 +28,9 @@ const Destination = () => {
     <div>
       <div className=' mt-12'>
         <p className=' text-base font-semibold text-sky-900/50 mb-6'>Top Selling</p>
-        <h1 className=' text-5xl font-bold'>Top Destinations</h1>
+        <h1 className=' text-5xl font-bold max-sm:text-3xl'>Top Destinations</h1>
       </div>
-      <div className='flex flex-row justify-between mt-8'>
+      <div className='flex flex-row justify-between mt-8 max-sm:flex-col max-sm:items-center'>
         {travelData.map((item, index) => (
             <TraveLCard imgUrlTag={item.imgUrl} text={item.text} price={item.price} date={item.date} key={item.imgUrl + index}/>
         ))}
